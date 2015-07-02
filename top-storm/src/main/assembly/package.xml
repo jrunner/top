@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<assembly>
+	<id>dist</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<includeBaseDirectory>true</includeBaseDirectory>
+	<files>
+		<file>
+			<source>${project.build.directory}/${artifact.artifactId}-${artifact.version}.jar</source>
+			<outputDirectory>lib</outputDirectory>
+			<fileMode>755</fileMode>
+		</file>
+		<file>
+			<source>readme.txt</source>
+			<outputDirectory>doc</outputDirectory>
+			<fileMode>755</fileMode>
+		</file>
+	</files>
+	<!-- 
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>lib</outputDirectory>
+			<scope>runtime</scope>
+		</dependencySet>
+	</dependencySets>
+	 -->
+</assembly>
