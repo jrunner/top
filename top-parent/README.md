@@ -2,7 +2,6 @@
 如果项目采用 maven 格式，默认是没有 IDE 所需要的配置文件。手动生成 Eclipse 与 MyEclipse 配置的指令是：
 2. 2014-06-26(周四)，添加bat脚本，方便构建
 
-
 说明：
 Eclipse:
 mvn eclipse:clean eclipse:eclipse -DdownloadSources 
