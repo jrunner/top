@@ -18,9 +18,6 @@ mvn eclipse:myeclipse-clean eclipse:myeclipse -DdownloadSources
 </dependency>
 
 
-
-
-
 mvn install:install-file -DgroupId=org.pentaho.kettle -DartifactId=kettle-core -Dversion=4.2.0 -Dpackaging=jar -Dfile=%now%lib\kettle-core.jar
 mvn install:install-file -DgroupId=org.pentaho.kettle -DartifactId=kettle-db -Dversion=4.2.0 -Dpackaging=jar -Dfile=%now%lib\kettle-db.jar
 mvn install:install-file -DgroupId=org.pentaho.kettle -DartifactId=kettle-dbdialog -Dversion=4.2.0 -Dpackaging=jar -Dfile=%now%lib\kettle-dbdialog.jar
