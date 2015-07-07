@@ -14,11 +14,11 @@ public class SendMessage {
 	 */
 	public static void main(String[] args) {
 		Properties props = new Properties();
-		props.put("zookeeper.connect", "node1:2181");
+		props.put("zookeeper.connect", "w22.node:2181");
 		props.put("serializer.class", "kafka.serializer.StringEncoder");
 		props.put("producer.type", "async");
 		props.put("compression.codec", "1");
-		props.put("metadata.broker.list", "node1:9092");
+		props.put("metadata.broker.list", "w22.node:9092");
 
 		ProducerConfig config = new ProducerConfig(props);
 		Producer<String, String> producer = new Producer<String, String>(config);
