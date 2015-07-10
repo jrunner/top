@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Title: tss-storm
+Implementation-Title: top-storm
 Implementation-Version: 1.0.0-SNAPSHOT
 Built-By: yangpengfei
 Implementation-Vendor-Id: com.dmis.top
@@ -28,7 +28,7 @@ Class-Path: jedis-2.5.1.jar commons-pool2-2.0.jar gson-2.2.4.jar kafka
 Main-Class: com.topsec.tss.topology.OrderTopology
 SCM-Revision: ${svn.revision}
 X-Compile-Target-JDK: 1.6
-Build-Time: 20150703100929
+Build-Time: 20150708173243
 X-Compile-Source-JDK: 1.6
 Created-By: IntelliJ IDEA
 Build-Jdk: 1.7.0_71

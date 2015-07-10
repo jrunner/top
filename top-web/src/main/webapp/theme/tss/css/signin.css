@@ -1,0 +1,45 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.jumbotron:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(../images/../images/signin.png) repeat center center;
+	opacity: .4
+}
+.erroColor {
+color: #d44950;
+}
+#siginBut {
+	width: 357px;
+	height: 47px;
+	padding-top: 10px;
+}
+.navbar-brand>img {
+	margin-top: -6px;
+	padding-right: 5px;
+}
+
+.navbar-brand {
+	margin-right: 10px;
+}
+.navbar-fixed-top {
+	background: #237cc9;
+}
+.navbar-header>a {
+	font-size: 20px;
+	color: #FFFFFF;
+	font-family: '微软雅黑';
+	margin-top: -2px;
+}
+.navbar-header>a:link,.navbar-header>a:visited {
+	color: #FFFFFF;
+}

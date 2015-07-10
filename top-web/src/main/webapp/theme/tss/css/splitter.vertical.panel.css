@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+html,body {
+	margin: 0; /* Remove body margin/padding */
+	padding: 0;
+	overflow: hidden; /* Remove scroll bars on browser window */ \
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+#contentLayoutSplitterPanel1 {
+	margin: 0; /* Remove body margin/padding */
+	padding: 0;
+	overflow: auto; /* Remove scroll bars on browser window */
+}
+#contentLayoutSplitterPanel2 {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+#contentLayoutSplitter {
+	border: 1px solid #669;
+	min-width: 500px; /* Splitter can't be too thin ... */
+	min-height: 300px; /* ... or too flat */
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*background-color: #f5f5f5;*/
+	border-right: 1px solid #eee;
+}
+
+#sidebarResourceDiv {
+	height: 100%;
+	width: 100%;
+	background-color: #e2effa;
+	margin: 0; /* Remove body margin/padding */
+	padding: 0;
+	overflow: hidden; /* Remove scroll bars on browser window */
+}
+
+#contentFrameDiv {
+	height: 100%;
+	width: 100%;
+	/*background-color: #f5f5f5;*/
+	margin: 0; /* Remove body margin/padding */
+	padding: 0;
+	overflow: hidden; /* Remove scroll bars on browser window */
+}
+
+#resourceTableDiv {
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	margin: 0; /* Remove body margin/padding */
+	padding: 10px;
+}
+
+.tss-position {
+	background: url(../images/leftbg.png) repeat-x;
+	border: 1px solid #5eb0f2;
+	height: 33px;
+	line-height: 33px;
+	font-size: 12px;
+	color: #ffffff;
+	padding-left: 10px;
+}

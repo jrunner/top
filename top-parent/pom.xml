@@ -18,6 +18,8 @@
     <modules>
         <module>../top-kafka</module>
         <module>../top-storm</module>
+        <module>../top-dubbo</module>
+        <module>../top-web</module>
     </modules>
 
     <properties>

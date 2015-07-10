@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+body {
+	font-size: 13px;
+}
+
+.bs-callout {
+	padding: 0px;
+	margin: 0px 0;
+	border: 0px solid #eee;
+	border-left-width: 0px;
+	border-radius: 0px;
+	background: #76bcfa;
+}
+
+#sidebarNavListNode>li>a: {
+	color: #FFFFFF;
+}
+
+#sidebarNavListNode>li>a {
+	height: 35px;
+	display: block;
+	text-decoration: none;
+}
+
+#sidebarNavListNode>li>a:link,#sidebarNavListNode>li>a:hover,#sidebarNavListNode>li>a:visited {
+	color: #676767;
+}
+
+#sidebarNavListNode>li>a:hover {
+	color: #ffffff;
+	background: #76bcfa;
+}
+
+.bs-callout-info {
+	border-left-color: #39778A;
+}
+
+.bs-callout-danger {
+	border-left-color: #d9534f;
+}
+
+.bs-callout-warning {
+	border-left-color: #f0ad4e;
+}
+
+.bs-callout-selected {
+	border-left-color: #428bca;
+}
+
+.bs-callout-cancel {
+	border-left-color: #999;
+}
+/**
+* 可关闭取消样式.
+**/
+.alert-success {
+    background-color: #76bcfa;
+    border-color: #76bcfa;
+    color: #3c763d;
+}

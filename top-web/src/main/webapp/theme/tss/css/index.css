@@ -1,0 +1,176 @@
+html,body {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden; /* Remove scroll bars on browser window */
+}
+/***多级菜单**/
+.dropdown-submenu {
+	position: relative;
+	background: #2d85d2;
+}
+
+.dropdown-submenu>.dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -6px;
+	margin-left: -1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+	display: block;
+}
+
+.dropdown-submenu>a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #FFFFFF;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+
+.dropdown-submenu>a:link,.dropdown-submenu>a:visited {
+	color: #ffffff;
+}
+
+.dropdown-submenu:hover>a:after {
+	border-left-color: #ffffff;
+	color: #ffffff;
+}
+
+.dropdown-submenu.pull-left {
+	float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+	left: -100%;
+	margin-left: 10px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	-moz-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-header {
+	padding-left: 2px;
+}
+
+.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
+	background: #76bcfa;
+	border: 1px solid #2871af;
+	color: #ffffff;
+	height: 33px;
+}
+
+.dropdown-menu {
+	background: #2d85d2;
+}
+
+.dropdown-menu>li {
+	border-bottom: 1px solid #2871af;
+	height: 33px;
+	line-height: 33px;
+	color: #ffffff;
+}
+
+.dropdown-menu>li>a:link,.dropdown-menu>li>a:visited {
+	color: #ffffff;
+	font-size: 12px;
+	font-family: '宋体';
+	font-weight: normal;
+}
+
+.dropdown-menu>li>a {
+	padding: 6px 20px;
+}
+/***TOP 菜单 **/
+/*****/
+.navbar-fixed-top {
+	background: #237cc9;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	font-size: 14px;
+	color: #dceefe;
+	font-family: '宋体';
+	font-weight: bold;
+	line-height: 24px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+.navbar-inverse .navbar-nav>li>a>img {
+	margin-top: -5px;
+	height: 24px;
+	width: 24px;
+}
+
+.navbar-brand>img {
+	margin-top: -6px;
+	padding-right: 5px;
+}
+
+.navbar-brand {
+	margin-right: 10px;
+}
+
+.navbar-header>a {
+	font-size: 20px;
+	color: #FFFFFF;
+	font-family: '微软雅黑';
+	margin-top: -2px;
+}
+
+.navbar-header>a:link,.navbar-header>a:visited {
+	color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>li {
+	background: url(../images/tophover.png) no-repeat left center;
+}
+
+.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus {
+	background-color: #1864a6;
+	color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus {
+	background-color: #1864a6;
+	color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.navbar-right>li {
+	background: none;
+}
+/*自定义*/
+#operationModalDiv .modal-body { /* SET THE WIDTH OF THE MODAL 设置Modal的宽度*/
+	width: 700px;
+	/* CHANGE MARGINS TO ACCOMODATE THE NEW WIDTH (original = margin: -250px 0 0 -280px;) */
+	height: 400px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	padding-top: 2px;
+}
+
+.modal-dialogOpr {
+	width: 700px;
+	margin: 30px auto;
+}
+
+.modal-header {
+	background-color: #f5f5f5;
+}

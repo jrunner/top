@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+	<!-- 读取数据库配置信息 -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	
+	<bean id="dataSource" destroy-method="close" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driverClassName}" />
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+
+	<bean id="sessionFactory" class="com.topsec.tss.hdfs.dao.PhoenixSessionFactory">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="baseDao" class="com.topsec.tss.hdfs.dao.impl.BaseDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean class="org.apache.wink.spring.Registrar">
+		<property name="instances">
+			<set>
+				<ref bean="com.topsec.tss.hdfs.rest.EventResource" />
+			</set>
+		</property>
+	</bean>
+	
+	<bean id="com.topsec.tss.hdfs.rest.EventResource" class="com.topsec.tss.hdfs.rest.EventResource">
+		<property name="baseDao" ref="baseDao" />
+	</bean>
+	
+	
+</beans>
