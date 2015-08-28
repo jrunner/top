@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>top-dubbo-client</artifactId>
+    <packaging>jar</packaging>
+    <name>${project.artifactId}</name>
+
+    <parent>
+        <groupId>com.dmis.top</groupId>
+        <artifactId>top-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../top-parent/pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <dubbo.version>2.5.3</dubbo.version>
+        <spring.version>4.0.5.RELEASE</spring.version>
+        <zookeeper.version>3.4.6</zookeeper.version>
+        <zkclient.version>1.1.2</zkclient.version>
+    </properties>
+
+    <dependencies>
+        <!-- top -->
+        <dependency>
+            <groupId>com.dmis.top</groupId>
+            <artifactId>top-dubbo-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <!-- top # -->
+
+        <!-- dubbo -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+        <!-- dubbo # -->
+
+        <!-- spring  -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- spring # -->
+
+        <!-- zookeeper -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${zookeeper.version}</version>
+        </dependency>
+        <!-- zookeeper # -->
+
+        <!-- zkclient -->
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.1</version>
+        </dependency>
+        <!-- zkclient # -->
+    </dependencies>
+
+    <build>
+        <plugins>
+        </plugins>
+    </build>
+</project>
