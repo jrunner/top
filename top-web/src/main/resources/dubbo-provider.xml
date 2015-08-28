@@ -23,6 +23,6 @@
     <dubbo:service interface="com.t2t.top.dubbo.DemoService" ref="demoService" />
 
     <!-- 和本地bean一样实现服务 -->
-    <bean id="demoService" class="com.t2t.top.dubbo.DemoServiceImpl" />
+    <bean id="demoService" class="com.t2t.top.dubbo.impl.DemoServiceImpl" />
 
 </beans>
