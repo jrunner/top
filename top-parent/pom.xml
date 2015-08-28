@@ -18,7 +18,9 @@
     <modules>
         <module>../top-kafka</module>
         <module>../top-storm</module>
-        <module>../top-dubbo</module>
+        <module>../top-dubbo-api</module>
+        <module>../top-dubbo-server</module>
+        <module>../top-dubbo-client</module>
         <module>../top-web</module>
     </modules>
 
